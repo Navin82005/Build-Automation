@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flutter-build-automation"
+version = "1.0.0"
+description = "Interactive CLI pipeline that builds, zips, uploads, and notifies for Flutter projects."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    "google-auth>=2.0",
+    "google-auth-oauthlib>=1.0",
+    "google-auth-httplib2>=0.2",
+    "google-api-python-client>=2.0",
+]
+
+[project.scripts]
+flutter-build = "bin.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bin*"]

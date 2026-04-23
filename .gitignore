@@ -1,0 +1,10 @@
+**/__pycache__
+flutter_build_automation*-info
+build_automation.py
+automation_runner.sh
+config.json
+credentials.json
+token.json
+**/venv
+**/build
+**/*.DS_Store
